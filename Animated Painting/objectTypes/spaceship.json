@@ -1,0 +1,43 @@
+{
+	"name": "spaceship",
+	"plugin-id": "Sprite",
+	"sid": 594740479052358,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 532840122083144
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.492,
+						"originY": 0.52,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4185533,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 273548820364811,
+				"name": "navicella",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

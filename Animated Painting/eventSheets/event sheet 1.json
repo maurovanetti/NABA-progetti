@@ -1,0 +1,246 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "velocita",
+			"type": "number",
+			"initialValue": "400",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 301930746603487
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 137772094600300
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "BG",
+					"sid": 627141667505245,
+					"parameters": {
+						"x": "BG.X - velocita * dt"
+					}
+				}
+			],
+			"sid": 870139080670844
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "BG",
+					"sid": 216391835092239,
+					"parameters": {
+						"comparison": 3,
+						"x-co-ordinate": "-854"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "BG",
+					"sid": 475095715343544,
+					"parameters": {
+						"x": "BG.X + BG.Width *2"
+					}
+				}
+			],
+			"sid": 560678112486072
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 565736932475085
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "greenplanet",
+					"sid": 552424066335270,
+					"parameters": {
+						"x": "greenplanet.X - velocita * dt"
+					}
+				}
+			],
+			"sid": 236337900158379
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "greenplanet",
+					"sid": 667796200762960,
+					"parameters": {
+						"comparison": 3,
+						"x-co-ordinate": "-854"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "greenplanet",
+					"sid": 133112152182058,
+					"parameters": {
+						"x": "854"
+					}
+				}
+			],
+			"sid": 150338522515434
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 570934878095316
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "violetplanet",
+					"sid": 603614598178563,
+					"parameters": {
+						"x": "violetplanet.X - velocita * dt"
+					}
+				}
+			],
+			"sid": 414552528792384
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "violetplanet",
+					"sid": 628675832913452,
+					"parameters": {
+						"comparison": 3,
+						"x-co-ordinate": "-854"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "violetplanet",
+					"sid": 807920750457927,
+					"parameters": {
+						"x": "854"
+					}
+				}
+			],
+			"sid": 717688644490928
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 616517879839012
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "asteroid",
+					"sid": 830242758634370,
+					"parameters": {
+						"x": "asteroid.X - velocita * dt"
+					}
+				}
+			],
+			"sid": 605095932485260
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "asteroid",
+					"sid": 606262740184463,
+					"parameters": {
+						"comparison": 3,
+						"x-co-ordinate": "-854"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "asteroid",
+					"sid": 514924486475983,
+					"parameters": {
+						"x": "854"
+					}
+				}
+			],
+			"sid": 130701334404738
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 145258041516198
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "Sprite",
+					"sid": 981502943234471,
+					"parameters": {
+						"x": "Sprite.X - velocita * dt"
+					}
+				}
+			],
+			"sid": 918425112531765
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "Sprite",
+					"sid": 292923924146324,
+					"parameters": {
+						"comparison": 3,
+						"x-co-ordinate": "-854"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "Sprite",
+					"sid": 918103365005850,
+					"parameters": {
+						"x": "854"
+					}
+				}
+			],
+			"sid": 902449494802502
+		}
+	],
+	"sid": 726577209110775
+}
